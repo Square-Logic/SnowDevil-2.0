@@ -1,0 +1,16 @@
+.quote-wrap {
+  background: $light-white;
+  padding: $line-global*5 $offset-global;
+  text-align: center;
+
+  blockquote {
+    text-align: left;
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  .button {
+    margin-top: $offset-global;
+  }
+}
