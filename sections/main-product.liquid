@@ -155,7 +155,12 @@
 
 
  <!-- End Product Bottom -->
-
+ {%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when '@app' -%}
+      {% render block %}
+  {%- endcase -%}
+ {%- endfor -%}
 
 
  {% if collection %}
