@@ -8,6 +8,12 @@
     },
     "main-search": {
       "name": "Search"
+    },
+    "contact-form": {
+      "name": "Contact form",
+      "presets": {
+        "name": "Contact form"
+      }
     }
   }
 }
