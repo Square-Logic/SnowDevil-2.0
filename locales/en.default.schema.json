@@ -2,6 +2,9 @@
   "sections": {
     "main-product": {
       "name": "Product information"
+    },
+    "main-page": {
+      "name": "Page"
     }
   }
 }
