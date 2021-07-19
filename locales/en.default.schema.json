@@ -17,6 +17,9 @@
     },
     "main-blog": {
       "name": "Blog"
+    },
+    "main-article": {
+      "name": "Article"
     }
   }
 }
