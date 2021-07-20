@@ -9,6 +9,9 @@
     "main-search": {
       "name": "Search"
     },
+    "main-cart-items": {
+      "name": "Items"
+    },
     "contact-form": {
       "name": "Contact form",
       "presets": {
