@@ -1,5 +1,8 @@
 {
   "sections": {
+    "slideshow": {
+      "name": "Slideshow"
+    },
     "main-product": {
       "name": "Product information"
     },
