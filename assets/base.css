@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* noto-serif-regular - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: font-url("noto-serif-v9-latin-regular", "eot");
+  /* IE9 Compat Modes */
+  src: font-url("noto-serif-v9-latin-regular", "eot"), font-url("noto-serif-v9-latin-regular", "woff2"), font-url("noto-serif-v9-latin-regular", "woff"), font-url("noto-serif-v9-latin-regular", "ttf"), font-url("noto-serif-v9-latin-regular", "svg#NotoSerif");
+  /* Legacy iOS */
+}
+/* noto-serif-700 - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: font-url("noto-serif-v9-latin-700", "eot");
+  /* IE9 Compat Modes */
+  src: font-url("noto-serif-v9-latin-700", "eot"), font-url("noto-serif-v9-latin-700", "woff2"), font-url("noto-serif-v9-latin-700", "woff"), font-url("noto-serif-v9-latin-700", "ttf"), font-url("noto-serif-v9-latin-700", "svg#NotoSerif");
+  /* Legacy iOS */
+}
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-family: "Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: font-url("ibm-plex-mono-v6-latin-regular", "eot");
+  /* IE9 Compat Modes */
+  src: font-url("ibm-plex-mono-v6-latin-regular", "eot"), font-url("ibm-plex-mono-v6-latin-regular", "woff2"), font-url("ibm-plex-mono-v6-latin-regular", "woff"), font-url("ibm-plex-mono-v6-latin-regular", "ttf"), font-url("ibm-plex-mono-v6-latin-regular", "svg#IBMPlexMono");
+  /* Legacy iOS */
+}
+/* ibm-plex-mono-700 - latin */
+@font-face {
+  font-family: "Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: font-url("ibm-plex-mono-v6-latin-700", "eot");
+  /* IE9 Compat Modes */
+  src: font-url("ibm-plex-mono-v6-latin-700", "eot"), font-url("ibm-plex-mono-v6-latin-700", "woff2"), font-url("ibm-plex-mono-v6-latin-700", "woff"), font-url("ibm-plex-mono-v6-latin-700", "ttf"), font-url("ibm-plex-mono-v6-latin-700", "svg#IBMPlexMono");
+  /* Legacy iOS */
+}
+* {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  line-height: 20px;
+}
+
+html {
+  background-color: #000000;
+}
+
+body {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 13px;
+  background-color: #FFFFFF;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  background-color: #FFFFFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.placeholder {
+  background-color: rgba(26, 27, 24, 0.04);
+  color: rgba(26, 27, 24, 0.55);
+  fill: rgba(26, 27, 24, 0.55);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: "Noto Serif", "Georgia", "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h2,
+.h2 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+h3,
+.h3 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+p {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.p-large {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 31px;
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  color: #000000;
+}
+
+.link-logo {
+  font-size: 55px;
+  display: inline-block;
+  width: 55px;
+}
+
+.text-link {
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  color: #555555;
+  fill: currentColor;
+}
+.text-link:hover {
+  color: #000000;
+}
+
+button[type=submit],
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  text-align: left;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  background: #000000;
+  color: #FFFFFF;
+}
+button[type=submit]:disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button[type=submit]:not(:disabled):hover,
+.button:not(:disabled):hover {
+  background: #1a1a1a;
+}
+button[type=submit]:hover,
+.button:hover {
+  color: #FFFFFF;
+}
+button[type=submit].button-cta,
+.button.button-cta {
+  width: 100%;
+  padding: 20px;
+}
+.text-white button[type=submit],
+.text-white .button {
+  background: #FFFFFF;
+  color: #000000;
+}
+.text-white button[type=submit]:hover,
+.text-white .button:hover {
+  color: #000000;
+  background: #e6e6e6;
+}
+
+.styled-select {
+  position: relative;
+  color: #555555;
+}
+.styled-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  text-align: left;
+  font-family: "Plex Mono", "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 20px;
+  color: currentColor;
+  padding-right: 20px;
+  width: 100%;
+}
+.styled-select .inline-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  font-size: 0.65em;
+}
+.text-white .styled-select {
+  color: #AAAAAA;
+}
+.text-white .styled-select:hover {
+  color: #FFFFFF;
+}
+
+blockquote p {
+  font-weight: 700;
+}
+blockquote cite {
+  display: block;
+  margin-top: 20px;
+}
+
+.visually-hidden {
+  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+.grid > * {
+  min-width: 0;
+  min-height: 0;
+}
+.grid.collapse {
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.two-columns {
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.valign-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.valign-center > *:first-child {
+  margin-top: auto;
+}
+.valign-center > *:last-child {
+  margin-bottom: auto;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+.text-white h1, .text-white .h1, .text-white h2, .text-white .h2, .text-white h3, .text-white .h3, .text-white h4, .text-white .h4 {
+  color: #FFFFFF;
+}
+.text-white p,
+.text-white .accent-color {
+  color: #CCCCCC;
+}
+.text-white a {
+  color: #FFFFFF;
+}
+.text-white a:hover {
+  color: #FFFFFF;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
