@@ -1,0 +1,14 @@
+.quote-wrap {
+  background: #FAFAFA;
+  padding: 100px 40px;
+  text-align: center;
+}
+.quote-wrap blockquote {
+  text-align: left;
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+}
+.quote-wrap .button {
+  margin-top: 40px;
+}
