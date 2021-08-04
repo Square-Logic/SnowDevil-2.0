@@ -1,0 +1,18 @@
+#error-404 {
+  height: calc(100vh - 100px);
+  background-color: #FAFAFA;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#error-404 .search-form {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  margin-bottom: auto;
+}
+#error-404 .button {
+  margin-bottom: 0;
+}
