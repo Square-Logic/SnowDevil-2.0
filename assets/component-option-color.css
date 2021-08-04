@@ -1,0 +1,38 @@
+.option-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.option-color .option-color-inner,
+.option-color .color-swatch {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.option-color .option-color-inner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  border: 1px solid #707070;
+  pointer-events: none;
+  border-radius: 100%;
+  opacity: 0;
+}
+.option-color .color-swatch {
+  border-radius: 100%;
+}
+.option-color.color-white .color-swatch {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+input[type=radio]:not(:checked):hover + label .option-color .option-color-inner:after {
+  opacity: 1;
+}
+input[type=radio]:checked + label .option-color .option-color-inner:after {
+  opacity: 1;
+  border-color: #333333;
+}
