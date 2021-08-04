@@ -1,0 +1,49 @@
+$black: #000000;
+$text-color: #555555;
+
+$slider-button-size: 50px;
+
+@mixin reset-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  text-align: left;
+}
+
+.slider-button {
+  @include reset-input;
+  font-size: $slider-button-size;
+  width: $slider-button-size;
+  height: $slider-button-size;
+  line-height: $slider-button-size;
+  text-align: center;
+  color: $text-color;
+  position: absolute;
+  top: 50%;
+  margin-top: -($slider-button-size);
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover {
+    color: $black;
+  }
+
+  &.prev {
+    left: 0;
+  }
+
+  &.next {
+    right: 0;
+  }
+}
