@@ -1,0 +1,7 @@
+#page .page-content {
+  margin-top: 40px;
+}
+#page .page-inner {
+  max-width: 500px;
+  margin: 0 auto;
+}
