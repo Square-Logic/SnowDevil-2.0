@@ -1,0 +1,26 @@
+.product-card .link-to-product,
+.product-card img {
+  display: block;
+}
+.product-card .card-info {
+  margin-top: 20px;
+}
+.product-card .product-price {
+  color: #000000;
+  text-align: right;
+}
+.product-card .card-info-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

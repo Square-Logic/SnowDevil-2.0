@@ -1,0 +1,27 @@
+$line-global: 20px;
+
+$black: #000000;
+
+.product-card {
+
+  .link-to-product,
+  img {
+    display: block;
+  }
+
+  .card-info {
+    margin-top: $line-global;
+  }
+
+  .product-price {
+    color: $black;
+    text-align: right;
+  }
+
+  .card-info-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
