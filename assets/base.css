@@ -279,7 +279,7 @@ button[type=submit].button-cta,
   padding-right: 20px;
   width: 100%;
 }
-.styled-select .inline-icon {
+.styled-select .icon-svg {
   position: absolute;
   top: 0;
   right: 0;
