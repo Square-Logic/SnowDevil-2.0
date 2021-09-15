@@ -317,17 +317,17 @@ blockquote cite {
   padding-right: 40px;
 }
 
-.grid {
+.grid, .collection-list {
   display: -ms-grid;
   display: grid;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
-.grid > * {
+.grid > *, .collection-list > * {
   min-width: 0;
   min-height: 0;
 }
-.grid.collapse {
+.grid.collapse, .collapse.collection-list {
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
