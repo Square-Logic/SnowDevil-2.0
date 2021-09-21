@@ -77,12 +77,14 @@
  </div>
  {%- comment -%}End Product Bottom{%- endcomment -%}
 
- {%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when '@app' -%}
-      {% render block %}
-  {%- endcase -%}
- {%- endfor -%}
+ {%- liquid
+   for block in section.blocks
+    case block.type
+      when '@app'
+        render block
+    endcase
+  endfor
+ -%}
 
 
  {% if collection %}
