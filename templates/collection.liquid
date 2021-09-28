@@ -42,7 +42,7 @@
       </aside>    
 
       {% for product in collection.products %}
-        {% include 'product-card' %}
+        {% render 'product-card', product: product %}
       {% endfor %}
     </div>
 </div>
