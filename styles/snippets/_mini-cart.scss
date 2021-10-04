@@ -1,7 +1,11 @@
 $header-height: 100px;
 
+
 $white: #FFFFFF;
 $light-white: #FAFAFA;
+$border-color: rgba(0,0,0,0.15);
+
+$standard-border: 1px solid $border-color;
 
 $line-global: 20px;
 $gutter-global: $line-global*2; // 40px
@@ -55,4 +59,42 @@ html.mini-cart-open {
   #no-click {
     display: block;
   }
+}
+
+.cart-contents {
+
+  .cart-empty-text {
+    margin: ($line-global*5) 0;
+  }
+
+  .subtotal-line {
+    padding: $line-global 0;
+    border-bottom: $standard-border;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .update-button {
+    display: inline-block;
+    width: auto;
+    margin-top: $line-global;
+    margin-bottom: $line-global;
+  }
+
+  .cart-buttons {
+    text-align: center;
+  }
+
+  .currency-note {
+    text-align: center;
+    margin-top: $line-global;
+  }
+
+  .keep-shopping {
+    display: table;
+    margin: 0 auto;
+  }  
 }
