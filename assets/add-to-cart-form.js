@@ -3,14 +3,14 @@ let
     productOptionSelector = addToCartFormSelector + ' [name*=option]';
 
   let productForm = {
-    onProductOptionChanged: function(event) {
+    onProductOptionChanged: (event) => {
       let
         form = this.closest(addToCartFormSelector),
         selectedVariant = productForm.getActiveVariant(form);
 
       form.trigger('form:change', [selectedVariant]);
     },
-    serializeArray: function (form) {
+    serializeArray: (form) => {
       const formData = new FormData(form);
       const data = [];
 
@@ -20,7 +20,7 @@ let
       return data;
       
     },
-    getActiveVariant: function (form) {
+    getActiveVariant: (form) => {
       let
         variants = JSON.parse(decodeURIComponent(form.getAttribute('data-variants'))),
         formData = this.serializeArray(form),
@@ -31,13 +31,13 @@ let
         },
         selectedVariant = null;
 
-        formData.forEach(function(item, index){
+        formData.forEach((item, index) => {
 	        if (item.name.indexOf('option') !== -1) {
             formOptions[item.name] = item.value;
           }
         });
 
-        variants.forEach(function(variant, index){
+        variants.forEach((variant, index) => {
 	        if (variant.option1 === formOptions.option1 && variant.option2 === formOptions.option2 && variant.option3 === formOptions.option3) {
             selectedVariant = variant;
             return false;
@@ -47,7 +47,7 @@ let
         return selectedVariant;
 
     },
-    validate: function(event, selectedVariant) {
+    validate: (event, selectedVariant) => {
       let  
         form = this,
         hasVariant = selectedVariant !== null,
@@ -77,8 +77,8 @@ let
       price.innerHTML = priceHtml;
       currencyPicker.onMoneySpanAdded();
     },
-    init: function () {
-      document.addEventListener('change', function(e) {
+    init: () => {
+      document.addEventListener('change', (e) => {
         // loop parent nodes from the target to the delegation node
         for (let target = e.target; target && target != this; target = target.parentNode) {
             if (target.matches(productOptionSelector)) {
@@ -87,7 +87,7 @@ let
             }
         }
       }, false);
-      document.addEventListener('form:change', function(e) {
+      document.addEventListener('form:change', (e) => {
         // loop parent nodes from the target to the delegation node
         for (let target = e.target; target && target != this; target = target.parentNode) {
             if (target.matches(addToCartFormSelector)) {
