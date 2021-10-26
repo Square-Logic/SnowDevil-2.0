@@ -107,10 +107,6 @@ body {
   line-height: 20px;
 }
 
-html {
-  background-color: #000000;
-}
-
 body {
   font-family: "Plex Mono", "Courier New", Courier, monospace;
   font-size: 13px;
@@ -317,17 +313,17 @@ blockquote cite {
   padding-right: 40px;
 }
 
-.grid, .collection-list {
+.grid {
   display: -ms-grid;
   display: grid;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
 }
-.grid > *, .collection-list > * {
+.grid > * {
   min-width: 0;
   min-height: 0;
 }
-.grid.collapse, .collapse.collection-list {
+.grid.collapse {
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
