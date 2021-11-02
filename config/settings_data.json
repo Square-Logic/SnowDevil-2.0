@@ -1,95 +1,63 @@
 {
-  "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "settings": {
-        }
-      },
-      "16256853700c4c1750": {
-        "type": "slideshow",
-        "blocks": {
-          "16256853700c4c1750-0": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/hero-stitch.jpg",
-              "title": "Slide one",
-              "content": "Slide one content",
-              "button_url": "shopify:\/\/collections\/collection-0",
-              "button_text": "Slide Button"
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
             }
           },
-          "16256853700c4c1750-1": {
-            "type": "slide",
-            "settings": {
-              "title": "Slide two",
-              "content": "Lorem Ipsum Dolor Sit Amet",
-              "button_url": "#",
-              "button_text": ""
-            }
-          }
-        },
-        "block_order": [
-          "16256853700c4c1750-0",
-          "16256853700c4c1750-1"
-        ],
-        "settings": {
-          "autoplay": true,
-          "autoplay_speed": 6500
-        }
-      },
-      "162593261763033c81": {
-        "type": "collection-list",
-        "settings": {
-          "collection": "collection-0",
-          "max_products": 2,
-          "title": "Collection Title",
-          "content": "Lorem ipsum",
-          "show_button": true,
-          "button_text": ""
-        }
-      },
-      "1625932649f8b061aa": {
-        "type": "image-text",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/show-2.jpg",
-          "title": "Image with Text",
-          "content": "Lorem ipsum dolor sit amet",
-          "show_button": true,
-          "button_url": "#",
-          "button_text": "",
-          "direction": "rtl",
-          "bgcolor": "black"
-        }
-      },
-      "1625932656de2fb0f3": {
-        "type": "image-text",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/show-1.jpg",
-          "title": "Image with Text",
-          "content": "Lorem ipsum dolor sit amet",
-          "show_button": true,
-          "button_url": "#",
-          "button_text": "",
-          "direction": "ltr",
-          "bgcolor": "black"
+          "block_order": [
+            "announcement-bar-0"
+          ]
         }
       }
     },
-    "content_for_index": [
-      "16256853700c4c1750",
-      "162593261763033c81",
-      "1625932649f8b061aa",
-      "1625932656de2fb0f3"
-    ]
-  },
-  "presets": {
-    "Default": {
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "color_scheme": "accent-1"
+          },
+          "blocks": {
+            "menu": {
+              "type": "link_list"
+            },
+            "text": {
+              "type": "text"
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ]
+        }
+      }
     }
   }
 }
