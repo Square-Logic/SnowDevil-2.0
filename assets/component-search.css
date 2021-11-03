@@ -1,29 +1,13 @@
-#page-search #search-form-wrap {
-  -ms-grid-columns: (1fr)[12];
-  grid-template-columns: repeat(12, 1fr);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: calc(100vh - 100px);
-  background: #FAFAFA;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.search__input.field__input {
+  padding-right: 5rem;
 }
-#page-search .search-form,
-#page-search .results-inner {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
+
+.search__button .icon {
+  height: 1.8rem;
+  width: 1.8rem;
 }
-#page-search #search-results {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  -ms-grid-columns: (1fr)[12];
-  grid-template-columns: repeat(12, 1fr);
-}
-#page-search .results-grid {
-  margin-top: 40px;
-}
-#page-search.search-performed #search-form-wrap {
-  max-height: 600px;
+
+/* Remove extra spacing for search inputs in Safari */
+input::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
