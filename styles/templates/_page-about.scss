@@ -1,9 +1,0 @@
-$line-global: 20px;
-$gutter-global: $line-global*2; // 40px
-$offset-global: $gutter-global;
-
-#page-about {
-  .page-about-top {
-    padding: $offset-global;
-  }
-}
